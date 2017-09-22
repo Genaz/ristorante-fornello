@@ -1,0 +1,14 @@
+<div class="list-group-item clearfix" style="border: none;">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{menuItem.title}}<span class="default-font"> - {{menuItem.price | currency:'USD':true}}</span></h4>
+    <p class="list-group-item-text">{{menuItem.description}}</p>
+    <p>Calories: {{menuItem.calories}}</p>
+  </div>
+  <span class="pull-right">
+                <img
+                        [src]="menuItem.imagePath"
+                        alt="{{menuItem.title}}"
+                        class="img-responsive"
+                        style="height: 100px;widht">
+            </span>
+</div>
